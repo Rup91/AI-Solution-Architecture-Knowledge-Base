@@ -349,7 +349,7 @@ The same input produces the same output every time.
 
 Example:
 
-Temparature = 0
+    - Temparature = 0
 
 Non-Deterministic Output:
 
@@ -357,7 +357,7 @@ The output may vary even with the same input.
 
 Example:
 
-Temparature = 0.7
+    - Temparature = 0.7
 
 Why It Matters:
 
