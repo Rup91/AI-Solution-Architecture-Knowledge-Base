@@ -473,7 +473,6 @@ This framework ensures that prompts remain safe, reliable, and compliant through
 | Manager | Approve deployment  |
 | Operator | Monitor system performance |
 | Auditor | Verify compliance |
- 
 
 # Example Governance Workflow
 
