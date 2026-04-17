@@ -51,14 +51,16 @@ The developer downloads relevant internal documentation from the organization's 
 
 Example:
 
+    ```plaintext
     project-root/
-    |_ docs/
-        |_ api-standards.pdf
-        |_ security-guidelines.pdf
-        |_ logging-rules.pdf
-        |_ rate-limiting-policy.pdf
-        |_ certificate-configuration.pdf
-         
+    │
+    └── docs/
+        ├── api-standards.pdf
+        ├── security-guidelines.pdf
+        ├── logging-rules.pdf
+        ├── rate-limiting-policy.pdf
+        └── certificate-configuration.pdf
+    ```
 These documents define how APIs must be implemented and secured.
 
 The AI assistant reads these documents and follows organizational standards when generating code.
@@ -98,58 +100,82 @@ The backend application already contains an existing Spring Boot microservice.
 
 Example structure:
 
-    - src/main/java/com/example/application/
-        |_ controller/
-           |_ HealthController.java
-        |_service/
-            |_ CustomerService.java
-        |_ repository/
-            |_ CustomerRepository.java
-        |_ model/
-            |_ Customer.java
-        |_ config/
-            |_ SecurityConfig.java
-            |_ LoggingConfig.java  
-        |_ integration/
-            |_ MainframeClient.java
-        |_ exception/
-            |_ GlobalExceptionHandler.java
-        |_ resources/
-            |_ application.yml
-            |_ logback.xml  
+    ```plaintext
+    src/main/java/com/example/application/
+    │
+    ├── controller/
+    │   └── HealthController.java
+    │
+    ├── service/
+    │   └── CustomerService.java
+    │
+    ├── repository/
+    │   └── CustomerRepository.java
+    │
+    ├── model/
+    │   └── Customer.java
+    │
+    ├── config/
+    │   ├── SecurityConfig.java
+    │   └── LoggingConfig.java
+    │
+    ├── integration/
+    │   └── MainframeClient.java
+    │
+    ├── exception/
+    │   └── GlobalExceptionHandler.java
+    │
+    └── resources/
+        ├── application.yml
+        └── logback.xml
+    ```
+
+
 
 ## New Project Structure (After Adding New API)
 
 After generating the new POST API, additional files and configuration components are added to the existing project.
 Updated structure:
 
-- src/main/java/com/example/application/
-        |_ controller/
-           |_ HealthController.java
-           |_ RecordRetrievalController.java <-- New File added
-        |_service/
-            |_ CustomerService.java
-            |_ RecordRetrievalService.java <-- New file added
-        |_ repository/
-            |_ CustomerRepository.java
-        |_ dto/
-            |_ RecordRequestDTO.java
-            |_ RecordResponseDTO.java
-        |_ integration/
-            |_ MainframeClient.java
-            |_ RecordIntegrationClient.java
-        |_ model/
-            |_ Customer.java
-        |_ config/
-            |_ SecurityConfig.java
-            |_ LoggingConfig.java
-            |_ RateLimitConfig.java
-        |_ exception/
-            |_ GlobalExceptionHandler.java
-            |_ RecordExceptionHandler.java
-        |_ resources/
-            |_ application.yml
-            |_ logback.xml  
+    ```plaintext
+    src/main/java/com/example/application/
+    │
+    ├── controller/
+    │ ├── HealthController.java
+    │ └── RecordRetrievalController.java <-- New file added
+    │
+    ├── service/
+    │ ├── CustomerService.java
+    │ └── RecordRetrievalService.java <-- New file added
+    │
+    ├── repository/
+    │ └── CustomerRepository.java
+    │
+    ├── dto/
+    │ ├── RecordRequestDTO.java
+    │ └── RecordResponseDTO.java
+    │
+    ├── integration/
+    │ ├── MainframeClient.java
+    │ └── RecordIntegrationClient.java
+    │
+    ├── model/
+    │ └── Customer.java
+    │
+    ├── config/
+    │ ├── SecurityConfig.java
+    │ ├── LoggingConfig.java
+    │ └── RateLimitConfig.java
+    │
+    ├── exception/
+    │ ├── GlobalExceptionHandler.java
+    │ └── RecordExceptionHandler.java
+    │
+    └── resources/
+        ├── application.yml
+        └── logback.xml
+    ```
+ 
 
 
 ## Prompt to Run Inside Existing Spring Boot Project
