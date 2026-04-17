@@ -51,7 +51,8 @@ The developer downloads relevant internal documentation from the organization's 
 
 Example:
 
-    ```plaintext
+```plaintext
+
     project-root/
     │
     └── docs/
@@ -60,7 +61,8 @@ Example:
         ├── logging-rules.pdf
         ├── rate-limiting-policy.pdf
         └── certificate-configuration.pdf
-    ```
+
+```
 These documents define how APIs must be implemented and secured.
 
 The AI assistant reads these documents and follows organizational standards when generating code.
@@ -100,7 +102,7 @@ The backend application already contains an existing Spring Boot microservice.
 
 Example structure:
 
-    ```plaintext
+```plaintext
     src/main/java/com/example/application/
     │
     ├── controller/
@@ -128,7 +130,7 @@ Example structure:
     └── resources/
         ├── application.yml
         └── logback.xml
-    ```
+```
 
 
 
@@ -137,7 +139,8 @@ Example structure:
 After generating the new POST API, additional files and configuration components are added to the existing project.
 Updated structure:
 
-    ```plaintext
+```plaintext
+
     src/main/java/com/example/application/
     │
     ├── controller/
@@ -174,7 +177,8 @@ Updated structure:
     └── resources/
         ├── application.yml
         └── logback.xml
-    ```
+
+```
  
 
 
