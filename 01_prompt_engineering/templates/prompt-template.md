@@ -116,7 +116,8 @@ Provide an example output.
 
 Example:
 ```json
-        {  "status": "SUCCESS",  
+        {  
+            "status": "SUCCESS",  
             "customerName": "John Doe",  
             "accountStatus": "Active"
         }
